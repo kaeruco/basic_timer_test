@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>セミタイマーコピペ</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+  </head>
+  <body>
+    <h1>セミタイマーコピペ</h1>
+    <div class='timer_box'>
+      <div class='timer_set_box'>
+        <p>1以上の数値を入力してください。</p>
+       <input type='number' id='timer_input'>
+       <button id='timer-button'>タイマーセット</button>
+      </div>
+      <!--初期値は空欄。タイマーセットボタンが押されたらjavascriptが動いて文字が出力される-->
+      <p id='time'></p>
+      <p id='warning'>入力値が不正です</p>
+    </div>
+    <script type="text/javascript" src="{% static 'polls/app0.js' %}"></script>
+  </body>
+</html>

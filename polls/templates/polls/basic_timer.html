@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic Timer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/basic_timer.css' %}">
+    
+  </head>
+  <body>
+    <div class='timer_box'>
+      <h1>Basic Timer</h1>
+      <div class='input_box'>
+        <input type='number' min="0" max="99" id='min_display'>
+        <p>分</p>
+        <input type='number' min="0" max="59" id='sec_display'>
+        <p>秒</p>
+      </div>
+      <div class='button_box'>
+        <button id='start_stop_button'>start</button>
+        <button id='reset_button'>reset</button>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="{% static 'polls/basic_timer.js' %}"></script>
+  </body>
+</html>
